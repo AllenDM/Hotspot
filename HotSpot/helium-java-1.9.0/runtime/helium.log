@@ -1,0 +1,4 @@
+Apr 28, 2016 5:47:37 PM com.heliumhq.api_impl.application_context.StandaloneAPIConfig initializeLogging
+INFO: Helium logging initialized.
+Apr 28, 2016 5:47:37 PM com.heliumhq.api_impl.application_context.StandaloneAPIConfig getHeliumConfigFile
+INFO: Reading Helium config from /home/codio/workspace/HotSpot/helium-java-1.9.0/runtime/Helium.ini

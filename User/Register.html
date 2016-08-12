@@ -1,0 +1,100 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/User/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="/User/js/bootstrap.min.js">
+</head>
+<body>
+ <style>
+        body {
+            padding-top: 1cm;
+            padding-left: 1cm;
+            background-image: url("/User/misc/app.gif");  
+            background-size: 150%; 150%;
+        }
+     
+     input[type = submit]{
+         width: 140px; height: 40px;
+         background-image: url("/User/misc/giphy.gif");
+         background-size: 60%; 100%;
+         font: bold 20px cursive;
+         padding-left: 5px;
+         color:white;
+     }
+         input[type = "text"]{
+         width: 200px; height: 20px;
+         font: bold 12px cursive;
+     }
+         input[type = "email"]{
+         width: 200px; height: 20px;
+         font: bold 12px cursive;
+     }
+         input[type = "password"]{
+         width: 200px; height: 20px;
+         font: bold 12px cursive;
+     }
+     input[type = "button"]{
+         color: white;
+     }
+     div {
+    width: 300px;
+    height:660px;
+    background-color: silver;
+    background-size: 200%; 80%;
+    border: 5px solid white;
+    padding-top: 1px;
+
+    padding-bottom: 10px;
+  
+    box-sizing: border-box;
+    overflow: auto;
+     }
+     form {
+         color: black;
+     }
+     
+    </style>
+    <center>
+    <div>
+        <form role = "form" action = '/User/Register.php?type=1' method = 'POST' >       
+        <p><b><font color = "white"face = "cursive" size = "5"> Create Your Account</font></b><br/><br/>
+            <font color = "white">Welcome to </font><img src = "/User/misc/HotspotLogo.png" style = "width: 70;height:58;">
+                <font color = "white"> already a Socialyte?</font>
+            <a href = "/User/HotspotLogin.html"><font color = "cyan">Sign in</font></a></p> 
+ <input type = "text" id = "username" name= "username" placeholder = "Username" required> <br/> <br/>
+ <input type = "text" id = "first" name= "first" placeholder = "First name"required><br/><br/>
+ <input type = "text" id = "last" name= "last" placeholder = "Last name"required><br/><br/>
+ <input type = "email" id = "email" name = "email" placeholder = "Email Address"required><br/><br/>
+    <p1><b><font color = "White">Birthday: </font></b></p1>
+     <input type = "date" id = "bday" name = "bday">
+    <br/><br/>
+    <p2><b><font color = "White">Gender: </font></b></p2>
+    <input type = "radio" id = "Gender" name = "Gender" value = "male" checked> <font color = "White"> male </font>
+    <input type = "radio" id = "Gender" name = "Gender" value = "female"> <font color = "white">female </font> 
+    <br/><br/>
+           <select id = "race" name = "race" required>
+        <option value="" disabled selected hidden>Nationality:</option>
+         <option value = "White"> White</option>
+         <option value = "black">Black</option>
+         <option value = "Spanish">Spanish</option>
+         <option value = "Asian">Asian</option>
+         <option value = "Haitian"> Haitian</option>
+         <option value = "<Jamaician">Jamaican</option>
+         <option value = "other">Other</option>
+    </select> 
+    <br/><br/>
+    <input type = "text" id = "city" name = "city" placeholder = "City" required>
+    <input type = "text" id = "State" name = "State" placeholder = "State"required><br/><br/>
+    <input type = "text" id = "zipcode" name = "zipcode" placeholder = "Zip code" required><br/><br/>
+    <input type = "password" id = "password" name = "password" placeholder = "Password"required>
+     <input type = "submit"id = "register" value = " Sign up">     
+        </form> </div></center>
+    <audio autoplay loop>
+  <source src="/User/misc/hotspot.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
